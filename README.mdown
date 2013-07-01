@@ -26,9 +26,9 @@ This will have each fork process 1000 jobs, before terminating.
 
 This plugin also defines a new hook, that gets called right before the fork terminates:
 
-  Resque.before_child_exit do |worker|
-    worker.log("#{worker.jobs_processed} were processed in this fork")
-  end
+    Resque.before_child_exit do |worker|
+      worker.log("#{worker.jobs_processed} were processed in this fork")
+    end
   
 
 ## Note on Patches/Pull Requests
